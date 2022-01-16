@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+<script >
+        // solution 4  right triangle pattern
+
+     let n=6;
+     let pattern="";
+
+for(let i=1; i<=n ;i++){
+    for(let j=0; j<n-i; j++){
+        pattern= pattern+" ";
+    }
+    for(let k=0; k<i; k++){
+        pattern=pattern+"*";
+    }
+    pattern=pattern+"\n";
+}
+console.log(pattern);
+</script>
+</body>
+</html>

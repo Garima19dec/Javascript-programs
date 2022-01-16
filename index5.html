@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn a{
+      text-decoration: none;
+      color: black;
+    }
+</style>
+<body>
+    <h1>Hey, I'm Garima Sharma</h1>
+    <div class="content">
+        <h3>Have a look on my linkedIn Profile or Github Profile</h3>
+        <button class="btn" id="btn" onclick="evenodd()">
+            Click me
+        </button>
+    </div>
+    <!-- <div>
+        <h3>Have a look on my Github Profile</h3>
+        <button class="btn">
+            <a target="_blank" href="https://www.linkedin.com/in/garima-sharma-455a651b1/">click me</a>
+            <a target="_blank" href="https://github.com/Garima19dec">Github</a>
+        </button>
+    </div> -->
+    <script>
+         let btn = document.querySelectorAll('.btn')
+         let elements = document.getElementsByClassName("content")
+
+    btn.addEventListener('click', () => {
+   
+        function evenodd(){
+        for(let i=1; i<=10; i++){
+            if(i%2==0){
+                document.write ("https://www.linkedin.com/in/garima-sharma-455a651b1/");
+            }else{
+                document.write ('https://github.com/Garima19dec');
+            }
+        }
+        console.log(evenodd());
+    }
+    
+})    
+   
+    </script>
+</body>
+</html>
