@@ -31,20 +31,20 @@
          let btn = document.querySelectorAll('.btn')
          let elements = document.getElementsByClassName("content")
 
-    btn.addEventListener('click', () => {
+         btn.addEventListener('click', (evenodd) => {
    
-        function evenodd(){
-        for(let i=1; i<=10; i++){
-            if(i%2==0){
-                document.write ("https://www.linkedin.com/in/garima-sharma-455a651b1/");
-            }else{
-                document.write ('https://github.com/Garima19dec');
-            }
-        }
-        console.log(evenodd());
-    }
-    
-})    
+       
+   for(let i=1; i<=2; i++){
+       if(i%2==0){
+           document.write ("https://www.linkedin.com/in/garima-sharma-455a651b1/");
+       }else{
+           document.write ('https://github.com/Garima19dec');
+       }
+   }
+   console.log(evenodd());
+
+
+}) 
    
     </script>
 </body>
